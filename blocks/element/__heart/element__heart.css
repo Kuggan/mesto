@@ -1,0 +1,7 @@
+.element__heart{
+    width: 20.76px;
+    height: 18.13px;
+    margin-right: 7.4px;
+    align-self: flex-end;
+    background: transparent url(../../../images/heart.svg) center no-repeat;
+}

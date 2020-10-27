@@ -1,0 +1,16 @@
+.header__box{
+    width: 69%;
+    margin: 0 auto;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+@media screen and (max-width:767px){
+    .header__box{
+        min-width:320px;
+        margin-top: 28px;
+        margin-bottom: 42px;
+    }
+}
