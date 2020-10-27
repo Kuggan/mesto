@@ -22,5 +22,6 @@
       max-width: 282px;
       /* background-size: 282px 50px; */
       margin-top: 36px;
+      background:transparent url(../../../images/Add\ Button_mobile.svg) center no-repeat;
     }
 }
