@@ -1,6 +1,6 @@
 .element__heart{
-    width: 20.76px;
-    height: 18.13px;
+    width: 24px;
+    height: 20px;
     align-self: flex-end;
     background: transparent url(../../../images/heart.svg) center no-repeat;
     border: none;
@@ -8,4 +8,8 @@
     margin: 0;
     margin-right: 7.4px;
     cursor: pointer;
+}
+.element__heart:hover{
+    opacity: 0.6;
+    transition: transform .2s ease-in;
 }

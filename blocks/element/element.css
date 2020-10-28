@@ -7,7 +7,6 @@
     box-sizing: border-box;
     object-fit: cover;
     object-position: center;
-    max-height: 361px;
     margin: 0;
   }
  @media screen and (max-width:1023px){
