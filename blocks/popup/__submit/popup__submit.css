@@ -27,5 +27,7 @@
   .popup__submit{
     width: 238px;
     margin: 45px auto 45px;
+    font-size: 14px;
+    line-height: 17px;
   }
 }
