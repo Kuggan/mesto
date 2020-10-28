@@ -1,5 +1,5 @@
 .profile__button-add{
-  background:transparent url(../../../images/Add\ Button.svg) center no-repeat;
+  background:transparent url(../../../images/add_button.svg) center no-repeat;
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 2px;
@@ -11,17 +11,18 @@
   cursor: pointer;
   padding: 0;
   margin: 0;
+  
 }
 .profile__button-add:hover{
-   border: 2px solid rgba(255, 255, 255, 0.6);
-   box-sizing: border-box;
-   border-radius: 2px;
+  opacity: 0.6;
+  transition: transform .2s ease-in;
+   
 }
 @media screen and (max-width:767px){
   .profile__button-add{
       max-width: 282px;
       /* background-size: 282px 50px; */
       margin-top: 36px;
-      background:transparent url(../../../images/Add\ Button_mobile.svg) center no-repeat;
+      background:transparent url(../../../images/add_button_mobile.svg) center no-repeat;
     }
 }

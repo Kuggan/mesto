@@ -2,17 +2,17 @@
     max-width: 282px;
     width:100%;
     border-radius: 10px;
-    object-fit:cover;
     overflow: hidden;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center;
+    max-height: 361px;
+    margin: 0;
   }
  @media screen and (max-width:1023px){
     .element{
       margin: 0 auto;
     }
   } 
- @media screen and (max-width:767px){
-    .element{
-      /* max-width: 282px; */
-      margin: 0 auto;
-    }
-  }
+ 

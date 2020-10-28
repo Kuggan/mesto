@@ -12,6 +12,7 @@
   border-radius: 2px;
   margin: 48px auto 36.51px;
   padding: 0;
+  border: none;
 
 
 }
@@ -19,6 +20,7 @@
     background: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     outline: none;
+    transition: transform .2s ease-in;
 }
 
 @media screen and (max-width:767px){

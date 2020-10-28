@@ -7,18 +7,21 @@
   background-size: 40.7px 40.7px;
   border: none;
   color:  #FFFFFF;
-  background:transparent url(../../../images/Close\ Icon.svg) center no-repeat;
+  background:transparent url(../../../images/close_icon.svg) center no-repeat;
   cursor: pointer;
   margin: 0;
   padding: 0;
 }
 .popup__close:hover{
   opacity: 0.6;
- 
+  transition: transform .2s ease-in;
 }
 @media screen and (max-width:767px){
   .popup__close{
     right:-5px;
-    top: -50px;
+    top: -25px;
+    height: 26px;
+    width: 26px;
+    background:transparent url(../../../images/close_icon_mobile.svg) center no-repeat;
   }
 }

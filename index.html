@@ -9,94 +9,77 @@
 <body class="body">
   <div class="page">
     <header class="header">
-      <div class="header__box">
-        <div class="header__logo"></div>
-        <div class="header__line"></div>
-      </div>
+      <div class="header__logo"></div>
     </header>
     <main class="content">
       <section class="profile">
         <div class="profile__box">
-          <img class="profile__avatar" src="./images/kusto_profil.jpg" alt="Кусто_фото">
+          <img class="profile__avatar" src="./images/kusto_profil.jpg" alt="аватар_пользователя">
           <div class="profile__info">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
             <button type="button" class="profile__button-edit"></button>
             <p class="profile__subtitle">Исследователь океана</p>
-           </div>
-          <button type="submit" class="profile__button-add" ></button>
+          </div>
+          <button type="button" class="profile__button-add"></button>
         </div>
       </section>
       <section class="elements">
-        <div class="element">
+        <article class="element">
           <div class="element__rectangle">
             <img class="element__image" src="./images/kirill-pershin-1088404_karachaevsk.jpg" alt="Карачаевск">
             <div class="element__box">
-              <span class="element__span">Карачаевск</span>
-              <div class="element__heart"></div>
+              <h3 class="element__title">Карачаевск</h3>
+              <button type="button" class="element__heart"></button>
             </div>
           </div>
-        </div>
-        <div class="element">
-          <div class="element__rectangle">
+        </article>
+        <article class="element">
             <img class="element__image" src="./images/kirill-pershin-1404681-elbrus_mountain.jpg" alt="Эльбрус">
             <div class="element__box">
-              <span class="element__span">Гора Эльбрус</span>
-              <div class="element__heart"></div>
+              <h3 class="element__title">Гора Эльбрус</h3>
+              <button type="button" class="element__heart"></button>
             </div>
-          </div>
-        </div>
-        <div class="element">
-          <div class="element__rectangle">
-            <img class="element__image" src="./images/kirill-pershin-1556355-dombay.jpg" alt="Домбай">
+        </article>
+        <article class="element">
+           <img class="element__image" src="./images/kirill-pershin-1556355-dombay.jpg" alt="Домбай">
             <div class="element__box">
-              <span class="element__span">Домбай</span>
-              <div class="element__heart"></div>
+              <h3 class="element__title">Домбай</h3>
+              <button type="button" class="element__heart"></button>
             </div>
+        </article>
+        <article class="element">
+          <img class="element__image" src="./images/kirill-pershin-1404681-elbrus_mountain_one.jpg" alt="Эльбрус">
+          <div class="element__box">
+            <h3 class="element__title">Гора Эльбрус</h3>
+            <button type="button" class="element__heart"></button>
           </div>
-        </div>
-        <div class="element">
-          <div class="element__rectangle">
-            <img class="element__image" src="./images/kirill-pershin-1404681-elbrus_mountain_one.jpg" alt="Эльбрус">
-            <div class="element__box">
-              <span class="element__span">Гора Эльбрус</span>
-              <div class="element__heart"></div>
-            </div>
+        </article>
+        <article class="element">
+          <img class="element__image" src="./images/kirill-pershin-1556355-dombay_one.jpg" alt="Домбай">
+          <div class="element__box">
+            <h3 class="element__title">Домбай</h3>
+            <button type="button" class="element__heart"></button>
           </div>
-        </div>
-        <div class="element">
-          <div class="element__rectangle">
-            <img class="element__image" src="./images/kirill-pershin-1556355-dombay_one.jpg" alt="Домбай">
-            <div class="element__box">
-              <span class="element__span">Домбай</span>
-              <div class="element__heart"></div>
-            </div>
+        </article>
+        <article class="element">
+          <img class="element__image" src="./images/kirill-pershin-1088404_karachaevsk.jpg" alt="Карачаево-черкесия">
+          <div class="element__box">
+            <h3 class="element__title">Карачаево-ч...</h3>
+            <button type="button" class="element__heart"></button>
           </div>
-        </div>
-        <div class="element">
-          <div class="element__rectangle">
-            <img class="element__image" src="./images/kirill-pershin-1088404_karachaevsk.jpg" alt="Карачаево-черкесия">
-            <div class="element__box">
-              <span class="element__span">Карачаево-ч...</span>
-              <div class="element__heart"></div>
-            </div>
-          </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer class="footer">
-     <div class="footer__box">
-       <span class="footer__span">© 2020 Mesto Russia</span>
-     </div>     
+      <span class="footer__span">&copy;2020 Mesto Russia</span>
     </footer>
     <div class="popup">
       <div class="popup__content">
          <button type="button" class="popup__close"></button>
          <h2 class="popup__header">Редактировать профиль</h2>
-         <form class="popup__form">
-           <input class="popup__input popup__input_name" type="text" name="name">
-           <div class="popup__input-line"></div>
-           <input class="popup__input popup__input_description" type="text" name="description">
-           <div class="popup__input-line"></div>
+         <form name="form" class="popup__form">
+           <input class="popup__input popup__input_enter_name" type="text" name="name">
+           <input class="popup__input popup__input_enter_description" type="text" name="description">
            <button type="submit" class="popup__submit">Сохранить</button>
          </form>
       </div>

@@ -6,6 +6,7 @@
   line-height: 22px;
   color: #FFFFFF;
   margin: 0;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   align-self:end;
@@ -13,12 +14,8 @@
 }
 @media screen and (max-width:767px){
   .profile__subtitle{
-    font-family: 'Inter', 'Arial', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
-    color: #FFFFFF;
   }
 }

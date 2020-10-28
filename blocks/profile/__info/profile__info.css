@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns:repeat(2,1fr);
   max-width: 336px;
-  max-height: 77px;
   width: 100%;
   row-gap: 2px;
   column-gap: 17px;
@@ -28,6 +27,6 @@
     align-items: center;
     padding-right:0;
     max-width: 280px;
-    max-height: 66px;
+    
   }
 } 
