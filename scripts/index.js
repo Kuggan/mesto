@@ -65,7 +65,7 @@ const popupInputTypeLink = document.querySelector('.popup__input_type_link');
 const popupFormAddCard = document.querySelector('.popup__form_add-card');
 const popupCloseImage = document.querySelector('.popup__close_image');
 const popupImage = document.querySelector('.popup_image');
-const popupImageCaption = document.querySelector('.popup__image_caption');
+const popupImageCaption = document.querySelector('.popup__caption');
 const popupImageZoomed = document.querySelector('.popup__image')
 
 
