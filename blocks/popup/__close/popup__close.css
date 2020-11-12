@@ -9,6 +9,7 @@
   color:  #FFFFFF;
   background:transparent url(../../../images/close_icon.svg) center no-repeat;
   cursor: pointer;
+  outline: none;
   margin: 0;
   padding: 0;
 }

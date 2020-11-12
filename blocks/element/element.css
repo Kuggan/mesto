@@ -8,6 +8,7 @@
     object-fit: cover;
     object-position: center;
     margin: 0;
+    position: relative;
   }
  @media screen and (max-width:1023px){
     .element{

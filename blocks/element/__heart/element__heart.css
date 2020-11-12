@@ -8,6 +8,8 @@
     margin: 0;
     margin-right: 7.4px;
     cursor: pointer;
+    outline: none;
+    flex-shrink: 0;
 }
 .element__heart:hover{
     opacity: 0.6;

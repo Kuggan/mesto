@@ -23,52 +23,7 @@
           <button type="button" class="profile__button-add"></button>
         </div>
       </section>
-      <section class="elements">
-        <article class="element">
-          <div class="element__rectangle">
-            <img class="element__image" src="./images/kirill-pershin-1088404_karachaevsk.jpg" alt="Карачаевск">
-            <div class="element__box">
-              <h3 class="element__title">Карачаевск</h3>
-              <button type="button" class="element__heart"></button>
-            </div>
-          </div>
-        </article>
-        <article class="element">
-            <img class="element__image" src="./images/kirill-pershin-1404681-elbrus_mountain.jpg" alt="Эльбрус">
-            <div class="element__box">
-              <h3 class="element__title">Гора Эльбрус</h3>
-              <button type="button" class="element__heart"></button>
-            </div>
-        </article>
-        <article class="element">
-           <img class="element__image" src="./images/kirill-pershin-1556355-dombay.jpg" alt="Домбай">
-            <div class="element__box">
-              <h3 class="element__title">Домбай</h3>
-              <button type="button" class="element__heart"></button>
-            </div>
-        </article>
-        <article class="element">
-          <img class="element__image" src="./images/kirill-pershin-1404681-elbrus_mountain_one.jpg" alt="Эльбрус">
-          <div class="element__box">
-            <h3 class="element__title">Гора Эльбрус</h3>
-            <button type="button" class="element__heart"></button>
-          </div>
-        </article>
-        <article class="element">
-          <img class="element__image" src="./images/kirill-pershin-1556355-dombay_one.jpg" alt="Домбай">
-          <div class="element__box">
-            <h3 class="element__title">Домбай</h3>
-            <button type="button" class="element__heart"></button>
-          </div>
-        </article>
-        <article class="element">
-          <img class="element__image" src="./images/kirill-pershin-1088404_karachaevsk.jpg" alt="Карачаево-черкесия">
-          <div class="element__box">
-            <h3 class="element__title">Карачаево-ч...</h3>
-            <button type="button" class="element__heart"></button>
-          </div>
-        </article>
-      </section>
+      <section class="elements"></section>
     </main>
     <footer class="footer">
       <span class="footer__span">&copy;2020 Mesto Russia</span>
@@ -84,8 +39,35 @@
          </form>
       </div>
     </div>
+    <div class="popup popup_add-card">
+      <div class="popup__content">
+         <button type="button" class="popup__close popup__close_add-card"></button>
+         <h2 class="popup__header">Новое место</h2>
+         <form name="form" class="popup__form popup__form_add-card">
+           <input class="popup__input popup__input_type_name" placeholder="Название" type="text" name="name">
+           <input class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" type="text" name="link">
+           <button type="submit" class="popup__submit popup__submit_add-card">Сохранить</button>
+         </form>
+      </div>
+    </div>
+    <div class="popup popup_image">
+      <div class="popup__content popup__content_image">
+        <img class="popup__image" src="#" alt="фото">
+        <span class="popup__image_caption"></span>
+      <button type="button" class="popup__close popup__close_image"></button>     
+      </div>
+    </div>
   </div>
-  
+  <template class="element-template">
+    <article class="element">
+      <img class="element__image" src="./images/kirill-pershin-1088404_karachaevsk.jpg" alt="Карачаево-черкесия">
+      <button type="button" class="element__delete"></button>
+      <div class="element__box">
+        <h3 class="element__title">Карачаево-ч...</h3>
+        <button type="button" class="element__heart"></button>
+      </div>
+    </article>
+  </template>
   <script src="./scripts/index.js"></script>
 </body>
 </html>
