@@ -23,18 +23,16 @@
           <button type="button" class="profile__button-add"></button>
         </div>
       </section>
-      <section class="elements">
-        
-      </section>
+      <section class="elements"></section>
     </main>
     <footer class="footer">
       <span class="footer__span">&copy;2020 Mesto Russia</span>
     </footer>
-    <div class="popup">
+    <div class="popup popup_edit-profile">
       <div class="popup__content">
-         <button type="button" class="popup__close"></button>
+         <button type="button" class="popup__close popup__close_edit-profile"></button>
          <h2 class="popup__header">Редактировать профиль</h2>
-         <form name="form" class="popup__form">
+         <form name="formEditProfile" class="popup__form popup__form_edit-profile">
            <input class="popup__input popup__input_enter_name" type="text" name="name">
            <input class="popup__input popup__input_enter_description" type="text" name="description">
            <button type="submit" class="popup__submit">Сохранить</button>
@@ -45,7 +43,7 @@
       <div class="popup__content">
          <button type="button" class="popup__close popup__close_add-card"></button>
          <h2 class="popup__header">Новое место</h2>
-         <form name="form" class="popup__form popup__form_add-card">
+         <form name="formAddCard" class="popup__form popup__form_add-card">
            <input class="popup__input popup__input_type_name" placeholder="Название" type="text" name="name">
            <input class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" type="text" name="link">
            <button type="submit" class="popup__submit popup__submit_add-card">Сохранить</button>
@@ -55,21 +53,21 @@
     <div class="popup popup_image">
       <div class="popup__content popup__content_image">
         <img class="popup__image" src="#" alt="фото">
-        <span class="popup__caption"></span>
+        <h3 class="popup__caption"></h3>
       <button type="button" class="popup__close popup__close_image"></button>     
       </div>
     </div>
   </div>
   <template class="element-template">
     <article class="element">
-      <img class="element__image" src="./images/kirill-pershin-1088404_karachaevsk.jpg" alt="Карачаево-черкесия">
+      <img class="element__image" src="#" alt="фото">
       <button type="button" class="element__delete"></button>
       <div class="element__box">
-        <h3 class="element__title">Карачаево-ч...</h3>
+        <h3 class="element__title"></h3>
         <button type="button" class="element__heart"></button>
       </div>
     </article>
   </template>
-  <script src="./scripts/index.js"></script>
+  <script type ="module" src="./scripts/index.js"></script>
 </body>
 </html>
