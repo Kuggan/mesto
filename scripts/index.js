@@ -85,7 +85,7 @@ function showPopupImage(src, alt){
         const cardElement = createCard(data);
         cards.prepend(cardElement);
         
-   }
+    }
         //  submit data which comes from a form of input
    popupFormAddCard.addEventListener('submit', event=>{
     event.preventDefault();
@@ -93,9 +93,8 @@ function showPopupImage(src, alt){
       name: popupInputTypeName.value,
       link: popupInputTypeLink.value
      };
-    const elementCard = addCard(dataCard);
-    cards.append(elementCard);
-    closePopup(popupAddCard)
+     addCard(dataCard);
+     closePopup(popupAddCard)
 });
 
   initialCards.forEach(addCard);
