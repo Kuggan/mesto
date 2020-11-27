@@ -50,9 +50,9 @@ function enableValidation(config) {
         form.addEventListener('submit', (evt) => {
             evt.preventDefault();
         });
-
+        
         const submitButton = form.querySelector(config.submitButtonSelector);
-        setButtonState(submitButton, form.checkValidity(), config)
+        setButtonState(submitButton, form.checkValidity(), config);
     });
 }
 
@@ -76,5 +76,6 @@ function resetValidationState (form, config){
 const errors = form.querySelectorAll(config.errorClass)
  errors.forEach((error) =>{
      error.textContent ='';
- })
+ });
+ 
 }
