@@ -1,0 +1,4 @@
+.popup__submit_invalid{
+    /* background: rgba(0, 0, 0, .3); */
+    opacity:0.3;
+}
