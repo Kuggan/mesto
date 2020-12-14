@@ -23,8 +23,8 @@ const profileName = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__subtitle');
 const fieldName = document.querySelector('.popup__input_enter_name');
 const fieldDescription = document.querySelector('.popup__input_enter_description');
-const formEditProfile = document.querySelector('.popup__form_edit-profile');//
-const popupFormAddCard = document.querySelector('.popup__form_add-card');//
+const formEditProfile = document.querySelector('.popup__form_edit-profile');
+const popupFormAddCard = document.querySelector('.popup__form_add-card');
 const popupInputTypeName = document.querySelector('.popup__input_type_name');
 const popupInputTypeLink = document.querySelector('.popup__input_type_link');
 const popupImage = document.querySelector('.popup_image');
@@ -40,6 +40,7 @@ const submitDescriptionButton = document.querySelector('.popup__submit_descripti
    showPopup(popupEditProfile);
    fieldName.value = profileName.textContent;
    fieldDescription.value = profileDescription.textContent;
+   editProfileFormValidator.resetValidation();
   } );
  
  closeEditButton.addEventListener('click', () => closePopup(popupEditProfile));
@@ -47,11 +48,12 @@ const submitDescriptionButton = document.querySelector('.popup__submit_descripti
   addCardButton.addEventListener('click', ()=>{ 
    showPopup(popupAddCard);
    popupFormAddCard.reset();
+   addCardFormValidator.resetValidation();
   });
  
  closeAddCardButton.addEventListener('click', ()=> closePopup(popupAddCard));
 
-
+ 
  // submit changes of profile a name and a description
  formEditProfile.addEventListener('submit',event=>{
   event.preventDefault();
