@@ -4,6 +4,7 @@ export  default class Card {
     this._name = data.name;
     this._cardSelector = cardSelector;
     this._showPopupImage = showPopupImage;
+    
   }
   _getTemplate() {
     const cardElement = document
@@ -29,8 +30,9 @@ export  default class Card {
 
   generateCard(){
     this._element = this._getTemplate();
-    this._element.querySelector('.element__image').src = this._link;
-    this._element.querySelector('.element__image').alt = this._name;
+     const cardElementImage = this._element.querySelector('.element__image')
+       cardElementImage.src = this._link;
+       cardElementImage.alt = this._name;
     this._element.querySelector('.element__title').textContent = this._name;
     this._setEventListeners();
      return this._element;
