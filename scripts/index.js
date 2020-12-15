@@ -33,14 +33,13 @@ const popupImageZoomed = document.querySelector('.popup__image');
 const closePopupImage = document.querySelector('.popup__close_image');
 const cards = document.querySelector('.elements');
 
-
 // event handlers
  editButton.addEventListener('click', ()=>{ 
    showPopup(popupEditProfile);
    fieldName.value = profileName.textContent;
    fieldDescription.value = profileDescription.textContent;
    editProfileFormValidator.resetValidation();
-   
+ 
   } );
  
  closeEditButton.addEventListener('click', () => closePopup(popupEditProfile));
@@ -50,8 +49,10 @@ const cards = document.querySelector('.elements');
    popupFormAddCard.reset();
    addCardFormValidator.resetValidation();
   });
-  
+ 
  closeAddCardButton.addEventListener('click', ()=> closePopup(popupAddCard));
+
+ 
  // submit changes of profile a name and a description
  formEditProfile.addEventListener('submit',event=>{
   event.preventDefault();
@@ -70,7 +71,7 @@ function showPopupImage(src, alt){
 
  closePopupImage.addEventListener('click',()=> closePopup(popupImage));
 
-
+// validate forms 
  const editProfileFormValidator = new FormValidator (validationConfig, formEditProfile );
  editProfileFormValidator.enableValidation();
  
