@@ -14,7 +14,7 @@ export default class FormValidator {
     }
     _hideError(input) {
         const error = this._form.querySelector(`#${input.id}-error`);
-        error.textContent = '';
+        error.textContent = ' ';
         input.classList.remove(this._config.inputInvalidClass);
     }
     _checkInputValidity(input) {

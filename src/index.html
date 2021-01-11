@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages/index.css">
+ 
   <title>Mesto Russia</title>
 </head>
 <body class="body">
@@ -14,7 +14,7 @@
     <main class="content">
       <section class="profile">
         <div class="profile__box">
-          <img class="profile__avatar" src="./images/kusto_profil.jpg" alt="аватар_пользователя">
+          <img class="profile__avatar" src="<%=require('./images/kusto_profil.jpg')%>" alt="аватар_пользователя">
           <div class="profile__info">
             <h1 class="profile__title">Жак-Ив Кусто</h1>
             <button type="button" class="profile__button-edit"></button>
@@ -33,10 +33,10 @@
          <button type="button" class="popup__close popup__close_edit-profile"></button>
          <h2 class="popup__header">Редактировать профиль</h2>
          <form name="formEditProfile" class="popup__form popup__form_edit-profile">
-           <input class="popup__input popup__input_enter_name" type="text" name="name" required id = "nameProfile" minlength="2" maxlength="40">
-           <span id = "nameProfile-error" class="error"></span>
-           <input class="popup__input popup__input_enter_description" type="text" name="description" required id = "descriptionProfile" minlength="2" maxlength="200">
-           <span id = "descriptionProfile-error" class="error"></span>
+           <input class="popup__input popup__input_enter_name" type="text" name="name" required id = "name" minlength="2" maxlength="40">
+           <span id = "name-error" class="error"></span>
+           <input class="popup__input popup__input_enter_description" type="text" name="job" required id = "job" minlength="2" maxlength="200">
+           <span id = "job-error" class="error"></span>
            <button type="submit" class="popup__submit popup__submit_description">Сохранить</button>
          </form>
       </div>
@@ -45,11 +45,11 @@
       <div class="popup__content">
          <button type="button" class="popup__close popup__close_add-card"></button>
          <h2 class="popup__header">Новое место</h2>
-         <form name="formAddCard" class="popup__form popup__form_add-card">
-           <input class="popup__input popup__input_type_name" placeholder="Название" type="text" name="name" required id ="namePlace"minlength="2" maxlength="30">
-           <span id="namePlace-error" class="error"></span>
-           <input class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" type="url" name="link" required id="imageLink">
-           <span id="imageLink-error" class="error"></span>
+         <form name="formAddCard" class="popup__form  popup__form_add-card">
+           <input class="popup__input popup__input_type_name" placeholder="Название" type="text" name="name" required id ="name"minlength="2" maxlength="30">
+           <span id="name-error" class="error"></span>
+           <input class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" type="url" name="link" required id="link">
+           <span id="link-error" class="error"></span>
            <button type="submit" class="popup__submit popup__submit_add-card">Сохранить</button>
          </form>
       </div>
@@ -72,6 +72,6 @@
       </div>
     </article>
   </template>
-  <script type ="module" src="./scripts/index.js"></script>
+  
 </body>
 </html>
