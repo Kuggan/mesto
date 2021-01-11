@@ -4,10 +4,10 @@ export default class UserInfo {
         this._jobProfile = document.querySelector(jobProfile);
     }
     getUserInfo(){
-        const name = this._nameProfile.textContent;
+        const title = this._nameProfile.textContent;
         const job = this._jobProfile.textContent;
         const profile ={
-            name: name,
+            name: title,
             job: job 
         }
         return profile;
