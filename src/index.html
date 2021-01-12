@@ -33,8 +33,8 @@
          <button type="button" class="popup__close popup__close_edit-profile"></button>
          <h2 class="popup__header">Редактировать профиль</h2>
          <form name="formEditProfile" class="popup__form popup__form_edit-profile">
-           <input class="popup__input popup__input_enter_name" type="text" name="title" required id = "title" minlength="2" maxlength="40">
-           <span id = "title-error" class="error"></span>
+           <input class="popup__input popup__input_enter_name" type="text" name="name" required id = "name-input" minlength="2" maxlength="40">
+           <span id = "name-input-error" class="error"></span>
            <input class="popup__input popup__input_enter_description" type="text" name="job" required id = "job" minlength="2" maxlength="200">
            <span id = "job-error" class="error"></span>
            <button type="submit" class="popup__submit popup__submit_description">Сохранить</button>
@@ -46,8 +46,8 @@
          <button type="button" class="popup__close popup__close_add-card"></button>
          <h2 class="popup__header">Новое место</h2>
          <form name="formAddCard" class="popup__form  popup__form_add-card">
-           <input class="popup__input popup__input_type_name" placeholder="Название" type="text" name="name" required id ="name"minlength="2" maxlength="30">
-           <span id="name-error" class="error"></span>
+           <input class="popup__input popup__input_type_name" placeholder="Название" type="text" name="name" required id ="title-input"minlength="2" maxlength="30">
+           <span id="title-input-error" class="error"></span>
            <input class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" type="url" name="link" required id="link">
            <span id="link-error" class="error"></span>
            <button type="submit" class="popup__submit popup__submit_add-card">Сохранить</button>

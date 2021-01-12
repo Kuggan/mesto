@@ -1,13 +1,13 @@
-import '../pages/index.css'
+import './index.css'
 
-import {initialCards, validationConfig } from './components.js';
+import {initialCards, validationConfig } from '../scripts/components/components.js';
 
-import Card from './Card.js';
-import FormValidator from './FormValidator.js';
-import UserInfo from './UserInfo.js';
-import Section from './Section.js';
-import PopupWithImage from './PopupWithImage.js';
-import PopupWithForm from './PopupWithForm.js';
+import Card from '../scripts/components/Card.js';
+import FormValidator from '../scripts/components/FormValidator.js';
+import UserInfo from '../scripts/components/UserInfo.js';
+import Section from '../scripts/components/Section.js';
+import PopupWithImage from '../scripts/components/PopupWithImage.js';
+import PopupWithForm from '../scripts/components/PopupWithForm.js';
 
  // validate forms 
  const formEditProfile = document.querySelector('.popup__form_edit-profile');
@@ -21,8 +21,9 @@ import PopupWithForm from './PopupWithForm.js';
  addCardFormValidator.enableValidation(); 
  
  //  open popup of zoomed picture
+ const popupImageZoomed = new PopupWithImage('.popup_image');
+
  function showPopupImage({name, link}){
-   const popupImageZoomed = new PopupWithImage('.popup_image');
    popupImageZoomed.setEventListeners();
    popupImageZoomed.openImage({name,link});
  }
