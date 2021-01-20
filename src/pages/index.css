@@ -6,6 +6,7 @@
 @import url('../blocks/header/__logo/header__logo.css');
 @import url('../blocks/profile/profile.css');
 @import url('../blocks/profile/__box/profile__box.css');
+@import url('../blocks/profile/__overlay/profile__overlay.css');
 @import url('../blocks/profile/__avatar/profile__avatar.css');
 @import url('../blocks/profile/__info/profile__info.css');
 @import url('../blocks/profile/__title/profile__title.css');
@@ -17,10 +18,13 @@
 @import url('../blocks/element/__image/element__image.css');
 @import url('../blocks/element/__image/element__image.css');
 @import url('../blocks/element/__delete/element__delete.css');
+@import url('../blocks/element/__delete/_disabled/element__delete_disabled.css');
 @import url('../blocks/element/__box/element__box.css');
 @import url('../blocks/element/__title/element__title.css');
+@import url('../blocks/element/__hearts/element__hearts.css');
 @import url('../blocks/element/__heart/element__heart.css');
 @import url('../blocks/element/__heart/_active/element__heart_active.css');
+@import url('../blocks/element/__counter/element__counter.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__span/footer__span.css');
 @import url('../blocks/popup/popup.css');

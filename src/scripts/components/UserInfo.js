@@ -8,13 +8,13 @@ export default class UserInfo {
         const job = this._jobProfile.textContent;
         const profile ={
             name: name,
-            job: job 
+            about: job
         }
         return profile;
     }
     setUserInfo(inputValues){
         this._nameProfile.textContent = inputValues.name;
-        this._jobProfile.textContent = inputValues.job;
+        this._jobProfile.textContent = inputValues.about;
 
     }
 }

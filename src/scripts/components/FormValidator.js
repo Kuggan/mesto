@@ -64,13 +64,3 @@ export default class FormValidator {
        
        
 }
-
-
- 
-
- 
-
-
- 
- 
-

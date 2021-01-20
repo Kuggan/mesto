@@ -1,0 +1,30 @@
+.profile__overlay{
+  position: relative;
+  max-width: 120px;
+  max-height: 120px;
+  height: 100%;
+  border-radius: 50%;
+  margin-right: 30px;
+  
+}
+.profile__overlay::after{
+    content:" ";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: url(../../../images/edit_avatar_button.svg) no-repeat center  rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+ .profile__overlay:hover::after{
+     opacity: 1;
+ }
+ .profile__overlay:hover .profile__overlay{
+     opacity: 0.2;
+ }
+ @media screen and (max-width: 767px){
+     .profile__overlay{
+        margin: 0 0 14px;
+     } 
+ }

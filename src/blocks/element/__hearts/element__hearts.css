@@ -1,0 +1,6 @@
+.element__hearts{
+    display: flex;
+    flex-direction: column;
+    margin: 0 21px 0 0;
+    align-self: center;
+}
