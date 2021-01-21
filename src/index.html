@@ -37,8 +37,8 @@
          <form name="formEditProfile" class="popup__form popup__form_edit-profile" method="POST" name="profile-edit" novalidate>
            <input class="popup__input popup__input_enter_name" type="text" name="name" required id = "name-input" minlength="2" maxlength="40">
            <span id = "name-input-error" class="error"></span>
-           <input class="popup__input popup__input_enter_description" type="text" name="about" required id = "about" minlength="2" maxlength="200">
-           <span id = "about-error" class="error"></span>
+           <input class="popup__input popup__input_enter_description" type="text" name="about" required id = "about-link" minlength="2" maxlength="200">
+           <span id = "about-link-error" class="error"></span>
            <button type="submit" class="popup__submit popup__submit_description">Сохранить</button>
          </form>
       </div>
@@ -50,8 +50,8 @@
          <form name="formAddCard" class="popup__form  popup__form_add-card" method="POST" name="add-form" novalidate>
            <input class="popup__input popup__input_type_name" placeholder="Название" type="text" name="title" required id ="title-input"minlength="2" maxlength="30">
            <span id="title-input-error" class="error"></span>
-           <input class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" type="url" name="url" required id="url">
-           <span id="url-error" class="error"></span>
+           <input class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" type="url" name="url" required id="url-link">
+           <span id="url-link-error" class="error"></span>
            <button type="submit" class="popup__submit popup__submit_add-card">Сохранить</button>
          </form>
       </div>
@@ -76,7 +76,7 @@
     </div>
   </div>
   <div class="popup popup_question">
-    <div class="popup__content">
+    <div class="popup__content popup__content_question">
        <button type="button" class="popup__close popup__close_question"></button>
        <h2 class="popup__header">Вы уверены?</h2>
        <form name="formQuestion" class="popup__form  popup__form_question" method="POST" name="question-form" novalidate>

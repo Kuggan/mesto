@@ -37,9 +37,7 @@ export default class Api{
         .then((data)=>{
             return data;
         })
-        // .catch(err=>{
-        //     alert(err);
-        // })
+       
 
     }
     renewUserAvatar(inputValues){
@@ -58,9 +56,7 @@ export default class Api{
         .then((data)=>{
             return data;
         })
-        // .catch(err=>{
-        //     alert(err);
-        // })
+       
 
     }
     getInitialCards(){
@@ -78,9 +74,7 @@ export default class Api{
         .then((data)=>{
             return data;
         })
-        // .catch(err=>{
-        //     alert(err);
-        // })
+        
     
     }
 

@@ -70,7 +70,7 @@ export  default class Card {
     this._element.querySelector('.element__counter').textContent = this._likes.length;
     this._setEventListeners();
     this._checkLikes();
-    if (this._owner != this._user){
+    if (this._owner != this._userId){
       this._element.querySelector('.element__delete').classList.add('element__delete_disabled');
       return this._element;
     } else{

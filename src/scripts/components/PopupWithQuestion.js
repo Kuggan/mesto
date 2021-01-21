@@ -16,9 +16,5 @@ export default class PopupWithQuestion extends Popup {
             super.close()
         });
     }
-    // open({elememt, id}){
-    //     this._element = elememt;
-    //     this._id = id;
-    //     super.open();
-    // }
+   
 }

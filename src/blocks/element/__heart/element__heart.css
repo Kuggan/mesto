@@ -1,12 +1,11 @@
 .element__heart{
     width: 24px;
     height: 20px;
-    align-self: flex-end;
+    align-self: center;
     background: transparent url(../../../images/heart.svg) center no-repeat;
     border: none;
     padding: 0;
     margin: 0;
-    margin-right: 7.4px;
     cursor: pointer;
     outline: none;
     flex-shrink: 0;
