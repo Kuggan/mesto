@@ -34,7 +34,7 @@
       <div class="popup__content">
          <button type="button" class="popup__close popup__close_edit-profile"></button>
          <h2 class="popup__header">Редактировать профиль</h2>
-         <form name="formEditProfile" class="popup__form popup__form_edit-profile"  name="profile-edit" novalidate>
+         <form name="formEditProfile" class="popup__form popup__form_edit-profile" >
            <input class="popup__input popup__input_enter_name" type="text" name="name" required id = "name-input" minlength="2" maxlength="40">
            <span id = "name-input-error" class="error"></span>
            <input class="popup__input popup__input_enter_description" type="text" name="about" required id = "about-link" minlength="2" maxlength="200">
@@ -47,7 +47,7 @@
       <div class="popup__content">
          <button type="button" class="popup__close popup__close_add-card"></button>
          <h2 class="popup__header">Новое место</h2>
-         <form name="formAddCard" class="popup__form  popup__form_add-card"  name="add-form" novalidate>
+         <form name="formAddCard" class="popup__form  popup__form_add-card"  >
            <input class="popup__input popup__input_type_name" placeholder="Название" type="text" name="title" required id ="title-input"minlength="2" maxlength="30">
            <span id="title-input-error" class="error"></span>
            <input class="popup__input popup__input_type_link" placeholder="Ссылка на картинку" type="url" name="url" required id="url-link">
@@ -68,7 +68,7 @@
     <div class="popup__content popup__content_avatar">
        <button type="button" class="popup__close popup__close_avatar-profile"></button>
        <h2 class="popup__header">Обновить аватар</h2>
-       <form name="formAvaterProfile" class="popup__form popup__form_avatar-profile"  name="avatar-form" novalidate>
+       <form name="formAvaterProfile" class="popup__form popup__form_avatar-profile" >
          <input class="popup__input popup__input_enter_link_avatar" type="url" name="avatar" required id = "avatar-link" placeholder ="Ссылка на картинку">
          <span id = "avatar-link-error" class="error"></span>
          <button type="submit" class="popup__submit popup__submit_description">Сохранить</button>
@@ -79,7 +79,7 @@
     <div class="popup__content popup__content_question">
        <button type="button" class="popup__close popup__close_question"></button>
        <h2 class="popup__header">Вы уверены?</h2>
-       <form name="formQuestion" class="popup__form  popup__form_question"  name="question-form" novalidate>
+       <form name="formQuestion" class="popup__form  popup__form_question">
          <button type="submit" class="popup__submit popup__submit_question">Да</button>
        </form>
     </div>
