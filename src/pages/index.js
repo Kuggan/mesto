@@ -1,30 +1,30 @@
-import "./index.css";
+import './index.css';
 
-import { validationConfig } from "../scripts/utils/constants.js";
+import { validationConfig } from '../scripts/utils/constants.js';
 
-import Card from "../scripts/components/Card.js";
-import FormValidator from "../scripts/components/FormValidator.js";
-import UserInfo from "../scripts/components/UserInfo.js";
-import Section from "../scripts/components/Section.js";
-import PopupWithImage from "../scripts/components/PopupWithImage.js";
-import PopupWithForm from "../scripts/components/PopupWithForm.js";
-import PopupWithQuestion from "../scripts/components/PopupWithQuestion.js";
-import Api from "../scripts/utils/Api.js";
+import Card from '../scripts/components/Card.js';
+import FormValidator from '../scripts/components/FormValidator.js';
+import UserInfo from '../scripts/components/UserInfo.js';
+import Section from '../scripts/components/Section.js';
+import PopupWithImage from '../scripts/components/PopupWithImage.js';
+import PopupWithForm from '../scripts/components/PopupWithForm.js';
+import PopupWithQuestion from '../scripts/components/PopupWithQuestion.js';
+import Api from '../scripts/utils/Api.js';
 
 // Api - ask the server
 const api = new Api({
-  url: "https://mesto.nomoreparties.co/v1/cohort-19",
+  url: 'https://mesto.nomoreparties.co/v1/cohort-19',
   headers: {
-    authorization: "92a26d6c-40ed-4aca-ae57-01c4984e9943",
-    "Content-Type": "application/json",
+    authorization: '92a26d6c-40ed-4aca-ae57-01c4984e9943',
+    'Content-Type': 'application/json',
   },
 });
 
 //  //validate forms
-const formEditProfile = document.querySelector(".popup__form_edit-profile");
-const popupFormAddCard = document.querySelector(".popup__form_add-card");
+const formEditProfile = document.querySelector('.popup__form_edit-profile');
+const popupFormAddCard = document.querySelector('.popup__form_add-card');
 const popupFormAvatarProfile = document.querySelector(
-  ".popup__form_avatar-profile"
+  '.popup__form_avatar-profile'
 );
 
 const editProfileFormValidator = new FormValidator(
@@ -46,12 +46,12 @@ const popupAvatarProfileValidator = new FormValidator(
 popupAvatarProfileValidator.enableValidation();
 
 //  open popup of zoomed picture
-const popupImageZoomed = new PopupWithImage(".popup_image");
+const popupImageZoomed = new PopupWithImage('.popup_image');
 popupImageZoomed.setEventListeners();
 
 // open popup with the question of deleting card
 const deleteCard = new PopupWithQuestion({
-  popupSelector: ".popup_question",
+  popupSelector: '.popup_question',
   handleSubmitForm: ({ element, id }) => {
     const deleteElement = element;
     const idElement = id;
@@ -75,7 +75,7 @@ const initialCardsList = new Section(
     renderer: ({ name, link, likes, cardId, owner, userId }) => {
       const card = new Card(
         { name, link, likes, cardId, owner, userId },
-        ".element-template",
+        '.element-template',
         {
           showPopupImage: ({ name, link }) => {
             popupImageZoomed.openImage({ name, link });
@@ -99,7 +99,7 @@ const initialCardsList = new Section(
       initialCardsList.addItem(cardElement);
     },
   },
-  ".elements"
+  '.elements'
 );
 
 Promise.all([api.getInitialCards(), api.getUserInfo()])
@@ -122,10 +122,10 @@ Promise.all([api.getInitialCards(), api.getUserInfo()])
   });
 
 //a form which to add a new card
-const addCardButton = document.querySelector(".profile__button-add");
+const addCardButton = document.querySelector('.profile__button-add');
 
 const popupAddForm = new PopupWithForm({
-  popupSelector: ".popup_add-card",
+  popupSelector: '.popup_add-card',
   handleSubmitForm: (inputValues) => {
     api
       .createNewCard(inputValues)
@@ -139,7 +139,7 @@ const popupAddForm = new PopupWithForm({
             owner: result.owner._id,
             userId: result.owner._id,
           },
-          ".element-template",
+          '.element-template',
           {
             showPopupImage: ({ name, link }) => {
               popupImageZoomed.openImage({ name, link });
@@ -174,28 +174,28 @@ const popupAddForm = new PopupWithForm({
 // handlers to add new card and to open popup
 
 popupAddForm.setEventListeners();
-addCardButton.addEventListener("click", () => {
+addCardButton.addEventListener('click', () => {
   addCardFormValidator.resetValidation();
   popupAddForm.open();
 });
 
 // Profile form
-const avatarEdit = document.querySelector(".profile__overlay");
+const avatarEdit = document.querySelector('.profile__overlay');
 
-const editButton = document.querySelector(".profile__button-edit");
-const fieldName = document.querySelector(".popup__input_enter_name");
+const editButton = document.querySelector('.profile__button-edit');
+const fieldName = document.querySelector('.popup__input_enter_name');
 const fieldDescription = document.querySelector(
-  ".popup__input_enter_description"
+  '.popup__input_enter_description'
 );
 
 const userInfo = new UserInfo({
-  nameProfile: ".profile__title",
-  jobProfile: ".profile__subtitle",
-  avatarProfile: ".profile__avatar",
+  nameProfile: '.profile__title',
+  jobProfile: '.profile__subtitle',
+  avatarProfile: '.profile__avatar',
 });
 
 const popupEditForm = new PopupWithForm({
-  popupSelector: ".popup_edit-profile",
+  popupSelector: '.popup_edit-profile',
   handleSubmitForm: (inputValues) => {
     api
       .renewUserInfo(inputValues)
@@ -213,7 +213,7 @@ const popupEditForm = new PopupWithForm({
 });
 // avatar form
 const popupAvatarForm = new PopupWithForm({
-  popupSelector: ".popup_avatar-profile",
+  popupSelector: '.popup_avatar-profile',
   handleSubmitForm: (inputValues) => {
     api
       .renewUserAvatar(inputValues)
@@ -233,7 +233,7 @@ const popupAvatarForm = new PopupWithForm({
 popupEditForm.setEventListeners();
 popupAvatarForm.setEventListeners();
 
-editButton.addEventListener("click", () => {
+editButton.addEventListener('click', () => {
   const userProfile = userInfo.getUserInfo();
   fieldName.value = userProfile.name;
   fieldDescription.value = userProfile.about;
@@ -241,7 +241,7 @@ editButton.addEventListener("click", () => {
   popupEditForm.open();
 });
 
-avatarEdit.addEventListener("click", () => {
+avatarEdit.addEventListener('click', () => {
   popupAvatarProfileValidator.resetValidation();
   popupAvatarForm.open();
 });
