@@ -1,11 +1,11 @@
 export  default class Card {
-  constructor({name, link, likes, cardId, owner, userId}, cardSelector, showPopupImage, showPopupWithQuestion, likeCard){
+  constructor({name, link, likes, cardId, owner, userId}, cardSelector, {showPopupImage, showPopupWithQuestion, likeCard}){
     this._link = link;
     this._name = name;
     this._likes = likes;
     this._cardId = cardId;
     this._owner = owner;
-    this._userId = userId;
+    this._user = userId;
     this._cardSelector = cardSelector;
     this._showPopupImage = showPopupImage;
     this._showPopupWithQuestion = showPopupWithQuestion;
@@ -61,6 +61,12 @@ export  default class Card {
       link: this._link});
  }
 
+ setLikes(result){
+  this._element.querySelector('.element__heart').classList.toggle('element__heart_active');
+  this._element.querySelector('.element__counter').textContent = result.likes.length;
+   
+ }
+
   generateCard(){
     this._element = this._getTemplate();
      const cardElementImage = this._element.querySelector('.element__image')
@@ -70,7 +76,7 @@ export  default class Card {
     this._element.querySelector('.element__counter').textContent = this._likes.length;
     this._setEventListeners();
     this._checkLikes();
-    if (this._owner != this._userId){
+        if (this._owner != this._user){
       this._element.querySelector('.element__delete').classList.add('element__delete_disabled');
       return this._element;
     } else{
@@ -78,9 +84,10 @@ export  default class Card {
     }
     
   }
+  remove(){
+    this._cardId.remove();
+    this._cardId = null;
+  }
 
-  
+
 }
-
-
- 
